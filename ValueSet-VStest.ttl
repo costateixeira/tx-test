@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/ValueSet/VStest> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VStest"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VStest</b></p><a name=\"VStest\"> </a><a name=\"hcVStest\"> </a><ul><li>Include all codes defined in <a href=\"https://www.ehealth.fgov.be/standards/fhir/drp/1.0.0/CodeSystem-be-prescription-status-reason.html\"><code>https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 1.0.0, the version found through the package references\"> version ?1.0.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://example.org/ValueSet/VStest"^^xsd:anyURI ;
+     fhir:l <http://example.org/ValueSet/VStest>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VStest"] ; # 
+  fhir:title [ fhir:v "Test ValueSet"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-01T20:35:21+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Example Publisher"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Example Publisher" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://example.org/example-publisher" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This is a test ValueSet"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason"^^xsd:anyURI ;
+         fhir:l <https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason>
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

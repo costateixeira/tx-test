@@ -1,0 +1,11 @@
+{
+  "codeSystems" : [{
+    "url" : "http://example.org/ValueSet/VStest",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VStest",
+    "title" : "Test ValueSet",
+    "description" : "This is a test ValueSet",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason"]
+  }]
+}

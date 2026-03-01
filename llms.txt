@@ -1,0 +1,20 @@
+# fhir.example#0.1.0: null
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### ValueSets
+
+* [Test ValueSet](ValueSet-VStest.md)
+
+### Resource Profiles
+
+* [ObsTest](StructureDefinition-ObsTest.md)
+
+### ImplementationGuides
+
+* [txtest](index.md)

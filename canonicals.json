@@ -1,0 +1,21 @@
+[{
+  "id" : "fhir.example",
+  "type" : "ImplementationGuide",
+  "url" : "http://example.org/ImplementationGuide/fhir.example",
+  "version" : "0.1.0",
+  "name" : "txtest"
+},
+{
+  "id" : "ObsTest",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/StructureDefinition/ObsTest",
+  "version" : "0.1.0",
+  "name" : "ObsTest"
+},
+{
+  "id" : "VStest",
+  "type" : "ValueSet",
+  "url" : "http://example.org/ValueSet/VStest",
+  "version" : "0.1.0",
+  "name" : "VStest"
+}]

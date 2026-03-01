@@ -1,0 +1,23 @@
+{
+  "codeSystems" : [{
+    "url" : "http://example.org/ValueSet/VStest",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VStest",
+    "title" : "Test ValueSet",
+    "description" : "This is a test ValueSet",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason"]
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "CurrentSmokingStatusUvIps",
+    "title" : "Current Smoking Status - IPS",
+    "description" : "HL7 IPS SNOMED value set for smoking status.  This value set includes a set of specific SNOMED CT codes (no subtypes included) that may be used to represent smoking status.\n\nSNOMED CT® ECL definition:\\\n449868002 |Smokes tobacco daily (finding)| OR 428041000124106 |Occasional tobacco smoker (finding)| OR 8517006 |Ex-smoker (finding)| OR 266919005 |Never smoked tobacco (finding)| OR 77176002 |Smoker (finding)| OR 266927001 |Tobacco smoking consumption unknown (finding)| OR 230063004 |Heavy cigarette smoker (finding)| OR 230060001 |Light cigarette smoker (finding)|",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-ObsTest.html" : "ObsTest"
+  }]
+}

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "VStest",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VStest</b></p><a name=\"VStest\"> </a><a name=\"hcVStest\"> </a><ul><li>Include all codes defined in <a href=\"https://www.ehealth.fgov.be/standards/fhir/drp/1.0.0/CodeSystem-be-prescription-status-reason.html\"><code>https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 1.0.0, the version found through the package references\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/VStest",
+  "version" : "0.1.0",
+  "name" : "VStest",
+  "title" : "Test ValueSet",
+  "status" : "draft",
+  "date" : "2026-03-01T20:35:21+00:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "This is a test ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason"
+    }]
+  }
+}

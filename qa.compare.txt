@@ -1,0 +1,42 @@
+txtest : Validation Results
+=========================================
+
+err = 0, warn = 8, info = 1
+$--
+Generated $--. FHIR version $-- for fhir.example#$-- (canonical = http://example.org)
+ Build Errors : 18 / 5 / 0
+ /work/fsh-generated/resources/ImplementationGuide-fhir.example : 0 / 1 / 1
+ /work/fsh-generated/resources/StructureDefinition-ObsTest : 0 / 1 / 2
+ /work/fsh-generated/resources/ValueSet-VStest : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ObsTest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: StructureDefinition-ObsTest-definitions.html#/html/body/div/div/div/p/a at Line 520, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: StructureDefinition-ObsTest-examples.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: StructureDefinition-ObsTest-mappings.html#/html/body/div/div/div/p/a at Line 907, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: StructureDefinition-ObsTest-testing.html#/html/body/div/div/div/p/a at Line 240, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: StructureDefinition-ObsTest.html#/html/body/div/div/div/p/a at Line 2630, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: StructureDefinition-ObsTest.profile.history.html#/html/body/div/div/div/p/a at Line 222, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: StructureDefinition-ObsTest.profile.json.html#/html/body/div/div/div/p/a at Line 2936, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: StructureDefinition-ObsTest.profile.ttl.html#/html/body/div/div/div/p/a at Line 2416, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: StructureDefinition-ObsTest.profile.xml.html#/html/body/div/div/div/p/a at Line 2780, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: ValueSet-VStest-testing.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: ValueSet-VStest.change.history.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: ValueSet-VStest.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: ValueSet-VStest.json.html#/html/body/div/div/div/p/a at Line 243, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: ValueSet-VStest.ttl.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: ValueSet-VStest.xml.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/div/p/a at Line 191, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/p/a at Line 200, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: toc.html#/html/body/div/div/div/p/a at Line 142, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-fhir.example.json ==
+WARNING: ImplementationGuide/fhir.example: ImplementationGuide: Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+== fsh-generated/resources/StructureDefinition-ObsTest.json ==
+INFORMATION: StructureDefinition/ObsTest: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/ObsTest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-VStest.json ==
+WARNING: ValueSet/VStest: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

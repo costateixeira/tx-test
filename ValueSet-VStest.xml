@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="VStest"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VStest</b></p><a name="VStest"> </a><a name="hcVStest"> </a><ul><li>Include all codes defined in <a href="https://www.ehealth.fgov.be/standards/fhir/drp/1.0.0/CodeSystem-be-prescription-status-reason.html"><code>https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason</code></a><span title="Version is not explicitly stated, which means it is fixed to 1.0.0, the version found through the package references"> version &#x1F4E6;1.0.0</span></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/VStest"/>
+  <version value="0.1.0"/>
+  <name value="VStest"/>
+  <title value="Test ValueSet"/>
+  <status value="draft"/>
+  <date value="2026-03-01T20:35:21+00:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="This is a test ValueSet"/>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/drp/CodeSystem/be-prescription-status-reason"/>
+    </include>
+  </compose>
+</ValueSet>
